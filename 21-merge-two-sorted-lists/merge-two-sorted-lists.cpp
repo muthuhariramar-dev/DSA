@@ -11,7 +11,7 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        // Create a dummy node to help with merging
+        
         ListNode dummy(0);
         ListNode* tail = &dummy;
 
