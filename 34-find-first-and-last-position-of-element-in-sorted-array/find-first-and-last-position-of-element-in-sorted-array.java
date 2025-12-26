@@ -15,11 +15,11 @@ class Solution {
         while(start<=end){
             int mid = start + (end - start)/2;
 
-            if(nums[mid] < target){
-                start = mid+1;
-
-            }else if(nums[mid] > target){
+            if(target < nums[mid]){
                 end = mid-1;
+
+            }else if( target>nums[mid] ){
+                start = mid+1;
             }else{
                 ans = mid;
                 if(FindStartIndex)
